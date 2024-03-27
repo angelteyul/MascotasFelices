@@ -7,7 +7,11 @@ WORKDIR /code
 
 COPY requirements.txt /code/
 
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install django-cors-headers djangorestframework coreapi
+
+EXPOSE 8000
 
 COPY . /code/
 
