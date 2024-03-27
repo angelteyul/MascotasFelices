@@ -3,9 +3,9 @@ services:
   db:
     image: postgres:12
     environment:
-      POSTGRES_DB: mascotas_felices
-      POSTGRES_USER: angelteyul
-      POSTGRES_PASSWORD: adminadmin
+      POSTGRES_DB: "${POSTGRES_DB}"
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
