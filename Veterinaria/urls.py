@@ -12,7 +12,7 @@ router.register(r'generos', views.GeneroView, 'genero')
 router.register(r'razas', views.RazaView, 'raza')
 router.register(r'mascotas', views.MascotaView, 'mascota')
 router.register(r'desparasitantes', views.DesparasitanteView, 'desparasitante')
-router.register(r'desparacitaciones', views.FichaDesparacitacionView, 'fichadesparacitacion')
+router.register(r'desparasitaciones', views.FichaDesparacitacionView, 'fichadesparacitacion')
 router.register(r'estados', views.EstadoView, 'estado')
 router.register(r'citas', views.CitaView, 'cita')
 
